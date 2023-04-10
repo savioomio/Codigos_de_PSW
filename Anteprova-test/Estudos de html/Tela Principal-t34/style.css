@@ -1,0 +1,26 @@
+body {
+    background-image: url(wallpapersden.com_world-of-tanks-t-34-85-tank_3840x2160.jpg);
+    background-size: cover;
+    margin: 100px;
+}
+
+.main-login{
+width:50vw;
+height: 0vw;
+background-color: #190603;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.left-login > h1 {
+    color: red;
+}
+
+
+
+.card-login{
+    color: rgb(0, 0, 0);
+}

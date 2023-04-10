@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(126, 205, 205);
+}
+
+.box {
+    display: grid;
+    grid-template-areas: "menu1 container container container container ";
+    border: 2px solid black;
+    height: 46.5vw;
+}
+
+.menu1 {
+    display: grid;
+    grid-template-areas:"DP"
+                        "NC"
+                        "I"
+                        "DN"
+                        "N"
+                         ;
+    grid-area: menu1 ;
+    border: 2px solid black;
+}
+
+.DP {
+    display: grid;
+    grid-area: DP;
+    border: 2px solid black;
+}
+
+.NC {
+    display: grid;
+    grid-area:NC ;
+    border: 2px solid black;
+}
+
+.I {
+    display: grid;
+    grid-area:I ;
+    border: 2px solid black;
+}
+
+.DN {
+    display: grid;
+    grid-area: DN;
+    border: 2px solid black;
+}
+
+.N {
+    display: grid;
+    grid-area:N ;
+    border: 2px solid black;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:"conteudo1 imgm conteudo2"
+                        "conteudo1 imgm conteudo2"  ;
+    grid-area:container ;
+    border: 2px solid black;
+    height: 46.5vw;
+}
+
+.conteudo1 {
+    display: grid;
+    grid-gap: 50px;
+    padding: 20px;
+    grid-template-areas: "V"
+                         "GM"
+                         "E"
+                          ;
+    grid-area: conteudo1;
+    /* border: 2px solid black; */
+
+}
+
+.V {
+    display: grid;
+    grid-area:V ;
+    border: 2px solid black;
+}
+
+.GM {
+    display: grid;
+    grid-area:GM ;
+    border: 2px solid black;
+}
+
+.E {
+    display: grid;
+    grid-area: E;
+    border: 2px solid black;
+}
+
+.conteudo2 {
+    grid-gap: 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: ;
+    grid-area:conteudo2 ;
+    /* border: 2px solid black; */
+    grid-template-areas: "C"
+                         "A"
+                         "C2"
+                         "F"
+                         ;
+}
+
+.C {
+    display: grid;
+    grid-area:C ;
+    border: 2px solid black;
+}
+
+
+.A {
+    display: grid;
+    grid-area:A ;
+    border: 2px solid black;
+}
+
+.C2 {
+    display: grid;
+    grid-area:C2 ;
+    border: 2px solid black;
+}
+
+.F {
+    display: grid;
+    grid-area:F ;
+    border: 2px solid black;
+}
+
+.imgm {
+    margin-top: 170px;;
+    border-radius: 50%;
+    justify-items: center;
+    display: grid;
+    height: 50%;
+
+    grid-template-areas: ;
+    grid-area:imgm ;
+    /* border: 2px solid black;    */
+    background-image: url(WhatsApp\ Image\ 2022-10-04\ at\ 13.22.07.jpeg);
+}
+

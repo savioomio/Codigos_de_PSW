@@ -1,0 +1,160 @@
+/* Centralizando o formulário */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 75, 145, 0.796);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixa-do-formulario{
+    width: 50%;
+    height: 87vh;
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: 
+    rgba(0, 0, 0, 0.4) 0px 2px 5px,
+     rgba(0, 0, 0, 0.3) 0px 7px 10px 1px, 
+     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     transition: all .5s ease-in-out;
+}
+
+.caixa-do-formulario:hover{
+  transform: translateY(-5px);
+  transition: all .5s ease-in-out;
+  box-shadow: 
+  rgba(0, 0, 0, 0.4) 0px 4px 10px,
+   rgba(0, 0, 0, 0.3) 0px 7px 20px 4px, 
+   rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+   transition: all .5s ease-in-out;
+}
+
+h1{
+    margin: 2vh;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5vh;
+    display: flex;
+}
+
+/* Estilizando os labels */
+label {
+    font-size: 2.5vh;
+    margin-right: 10px;
+}
+
+/* Estilizando os inputs */
+.inputGroup {
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.3em;
+    background-color: #ffffff;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+.inputGroupm {
+    position: relative;
+  }
+  
+  .inputGroupm input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 20vh;
+    overflow-y: scroll; /* Adiciona a barra de rolagem no eixo y (vertical) */
+    max-height: 200px; /* Define o tamanho máximo da caixa de mensagem */
+  }
+  
+  .inputGroupm label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .inputGroupm :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.3em;
+    background-color: #ffffff;
+  }
+  
+  .inputGroupm :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Estilizando o botão de reset */
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

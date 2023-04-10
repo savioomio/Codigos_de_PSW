@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stylees.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>Formulario de contato</h1>
+
+    <div class="caixa-do-formulario">
+        <form  action="lec.php" method="POST" >
+
+             <div class="inputGroup">
+                 <label for="nome">Nome:</label>
+                 <input type="text" name="nome" id="nome" >
+             </div>
+           
+            <br>
+
+            <div class="inputGroup">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" >
+            </div>
+
+            <br>
+
+            <div class="inputGroup">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" >
+            </div>
+
+            <br>
+
+            <div class="inputGroup">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" >
+            </div>
+
+            <br>
+
+            <div class="inputGroup">
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade">
+            </div>
+
+            <br>
+
+            <div class="inputGroupm">
+                <label  for="descricao">Mensagem:</label >
+                <input type="text" name="descricao" id="descricao" >
+            </div>
+
+            <br>
+
+            <div class="botões">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
